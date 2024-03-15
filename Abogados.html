@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prudente y Asociados - Abogados - UNAM</title>
+    <title>Abogados con experiencia - UNAM</title>
     <link rel="stylesheet" href="estilosAbogados.css"> <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para iconos -->
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="img/unam_logo.png" alt="Logo UNAM">
+            <img src="img/fes_acatlan_logo.png" alt="Logo FES Acatlán">
+        </div>
         <h1>Abogados con más de 25 años de experiencia - UNAM</h1>
     </header>
     <div class="container">
-        <div class="icon"><img src="img/balance-scale.png" alt="Icono de balanza"></div> <!-- Icono de balanza -->
-        <div class="icon"><img src="img/graduation-cap.png" alt="Icono de birrete"></div> <!-- Icono de birrete -->
-        <div class="icon"><img src="img/university.png" alt="Icono de universidad"></div> <!-- Icono de universidad -->
+        <div class="icon"><i class="fas fa-balance-scale"></i></div> <!-- Icono de balanza -->
+        <div class="icon"><i class="fas fa-graduation-cap"></i></div> <!-- Icono de birrete -->
+        <div class="icon"><i class="fas fa-university"></i></div> <!-- Icono de universidad -->
         <div class="experience">
             <h2>Nuestra experiencia</h2>
             <p>Somos un grupo de abogados con más de 25 años de experiencia en diversas áreas legales.</p>
@@ -22,6 +26,16 @@
         <div class="education">
             <h2>Educación</h2>
             <p>Egresados de la Facultad de Estudios Superiores Acatlán, UNAM.</p>
+        </div>
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required><br>
+                <input type="email" name="email" placeholder="Correo electrónico" required><br>
+                <input type="tel" name="telefono" placeholder="Teléfono"><br>
+                <textarea name="mensaje" placeholder="Mensaje"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
 </body>
