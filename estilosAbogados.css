@@ -1,62 +1,89 @@
 /* Estilos CSS */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #007bff; /* Fondo azul */
-    color: #fff; /* Color del texto */
-}
-header {
-    background-color: #0056b3; /* Azul más oscuro para el encabezado */
-    padding: 20px 0;
-    text-align: center;
-    color: #fff; /* Color del texto */
-}
-.logo {
-    margin-bottom: 20px;
-}
-.logo img {
-    height: 50px;
-    margin: 0 10px;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: #000; /* Color del texto */
-}
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-.experience, .education, .contact-form {
-    margin-top: 20px;
-}
-.experience h2, .education h2, .contact-form h2 {
-    margin-bottom: 10px;
-}
-.experience ul {
-    margin-left: 20px;
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #0056b3; /* Azul más oscuro */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.contact-form button:hover {
-    background-color: #004080; /* Azul más oscuro al pasar el mouse */
-}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        h1{
+            color: #ffffff;
+        }
+        }
+        
+        
+
+        header img {
+            width: 50px;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        .experience, .education, .contact {
+            background-color: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .experience ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience li, .education li {
+            padding: 5px 0;
+            color: #006699;
+        }
+        .contact {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #002244;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        a.btn-third {
+            color: #fff;
+            background-color: #FF5722;
+            padding: 5px 20px;
+        }

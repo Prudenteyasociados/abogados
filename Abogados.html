@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prudente y Asociados - Abogados - UNAM</title>
-    <link rel="stylesheet" href="estilosAbogados.css"> <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para iconos -->
+    <title>Abogados Prudente y Asociados</title>
+    
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/UNAM_logo.svg/1200px-UNAM_logo.svg.png" alt="Logo UNAM">
-            <img src="https://www.acatlan.unam.mx/img/FES_Acatlan.png" alt="Logo FES Acatlán">
+        <div class="headerclass">
+            <h1>Prudente y Asociados</h1>
+            <img src="./img/escudo-unam.jpg" alt="Escudo UNAM">
+            <img src="./img/escudo-fes-acatlan.jpg" alt="Escudo FES Acatlán">
         </div>
-        <h1>Abogados con más de 25 años de experiencia - UNAM</h1>
     </header>
+    <link rel="stylesheet" href="./estilosAbogados.css">
     <div class="container">
-        <div class="icon"><i class="fas fa-balance-scale"></i></div> <!-- Icono de balanza -->
-        <div class="icon"><i class="fas fa-graduation-cap"></i></div> <!-- Icono de birrete -->
-        <div class="icon"><i class="fas fa-university"></i></div> <!-- Icono de universidad -->
         <div class="experience">
             <h2>Nuestra experiencia</h2>
             <p>Somos un grupo de abogados con más de 25 años de experiencia en diversas áreas legales, incluyendo:</p>
             <ul>
-                <li>Derecho civil</li>
-                <li>Derecho penal</li>
-                <li>Derecho laboral</li>
-                <li>Derecho fiscal</li>
-                <li>Derecho mercantil</li>
-                <li>Derecho administrativo</li>
-                <li>Derecho internacional</li>
+                <li>Derecho civil - Asesoramos en conflictos entre particulares, contratos y obligaciones.</li>
+                <li>Derecho penal - Defendemos tus derechos en procesos penales, desde delitos menores hasta graves.</li>
+                <li>Derecho laboral - Representamos tanto a trabajadores como a empleadores en conflictos laborales.</li>
+                <li>Derecho fiscal - Ofrecemos asesoría en impuestos y litigios fiscales.</li>
+                <li>Derecho mercantil - Asistimos en la constitución y funcionamiento de empresas.</li>
+                <li>Derecho administrativo - Intervenimos en conflictos con la administración pública.</li>
+                <li>Derecho internacional - Gestionamos asuntos legales que trascienden fronteras.</li>
             </ul>
         </div>
+
         <div class="education">
             <h2>Educación</h2>
-            <p>Egresados de la Facultad de Estudios Superiores Acatlán, UNAM.</p>
+            <p>Egresados de la Facultad de Estudios Superiores Acatlán, UNAM, nuestros abogados cuentan con una formación sólida y continua en diversas ramas del derecho.</p>
+            <ul>
+                <li>Participación en seminarios y congresos nacionales e internacionales.</li>
+                <li>Actualización constante en legislación y jurisprudencia.</li>
+                <li>Colaboración con instituciones educativas y de investigación.</li>
+            </ul>
         </div>
-        <div class="contact-form">
+        
+        <div class="contact">
             <h2>Contáctanos</h2>
-            <form action="#" method="post">
-                <input type="text" name="nombre" placeholder="Nombre" required><br>
-                <input type="email" name="email" placeholder="Correo electrónico" required><br>
-                <input type="tel" name="telefono" placeholder="Teléfono"><br>
-                <textarea name="mensaje" placeholder="Mensaje"></textarea><br>
+            <p>Para consultas y asistencia legal, por favor rellena el siguiente formulario o llámanos 
+                <a class="btn-third" href="tel:600123456">600123456</a>
+            </p>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <label type="form-label" for="asunto">Asunto</label>
+                <select class="form-select" id="asunto" name="asunto">>
+                    <option>Saludos</option>
+                    <option>Pregunta</option>
+                    <option>Presupuesto</option>
+                    <option>Queja/Reclamo</option>
+                </select>
+                <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Abogados Prudente y Asociados. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Gracias por contactarnos, ' + name + '. Hemos recibido tu mensaje y te responderemos pronto.');
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Por favor, completa todos los campos del formulario.');
+            }
+        });
+    </script>
 </body>
 </html>
